@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Music player</h1>
+
+    <div class="music-container">
+            <div class="mini-container">
+                <div class="keep">               
+                    <h4 id="title"> heart.mp3</h4>
+                    <div class="progress-container">
+                        <input type="range" name="progress" id="progress" min="0" max="100" value="0" step="0.1">
+                        <div id="timespan">00.00</div>
+
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="image/heart.jpg" alt="music-img" id="image">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <audio src="music/heart.mp3" id="audio"></audio>
+            <div class="music-button">
+                <div class="mini-button">
+                    <button id="prev">prev</button>
+                    <button id="playButton" class="playy">play</button>
+                    <button id="next">next</button>
+                </div>
+            </div>
+            
+        
+    </div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+<script src="script.js"></script>
+</body>
+</html>

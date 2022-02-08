@@ -1,0 +1,140 @@
+body {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.music-container {
+  color: black;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 15px;
+  z-index: 2;
+}
+
+.mini-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  height: 15vh;
+}
+
+/* .keep is the one that house h4 and progress bar together */
+.keep {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -3rem;
+  padding: 2rem;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rem;
+}
+#timespan {
+  font-size: 0.8rem;
+  margin-left: 0.2rem;
+}
+.img-container img {
+  max-width: 100%;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: rotate 3s linear infinite;
+  animation-play-state: paused;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.img-container {
+  position: relative;
+}
+
+.circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.music-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 7vh;
+  border-radius: 15px;
+  margin-top: -2.2rem;
+}
+
+button {
+  padding: 10px;
+  margin-left: 2px;
+  color: white;
+  background-color: rgb(218, 58, 0, 0.849);
+  border-color: rgb(218, 58, 0, 0.849);
+  border-radius: 6px;
+  font-size: 10px;
+  transition-property: font-size;
+  transition-duration: 0.1s;
+}
+
+button:hover {
+  font-size: 20px;
+}
+
+.mini-button {
+  margin-left: 5rem;
+}
+
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+
+input[type="range"] {
+  color: #6cdbeb;
+}
