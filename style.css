@@ -123,8 +123,17 @@ button:hover {
   height: 10rem;
   position: absolute;
   border-radius: 50%;
+  animation: fadeIn 5s;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .circle1 {
   top: 5%;
   right: 15%;
